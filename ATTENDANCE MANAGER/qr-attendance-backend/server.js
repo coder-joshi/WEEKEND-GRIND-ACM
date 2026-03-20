@@ -8,8 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 //Routes
-
+ 
 app.use("/api",require("./routes/userRoutes"))
+app.use("/api/admin", require("./routes/adminRoutes"));
 console.log(process.env.MONGO_URI);
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
