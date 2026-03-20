@@ -16,6 +16,12 @@ const users = [
     phoneNumber: "9123456780",
     preference: "non-veg",
     hostelName: "Boys Hostel B"
+  },{
+    name: "Atharv",
+    studentId: "1BM25CS071",
+    phoneNumber: "9369615070",
+    preference: "veg",
+    hostelName: "NBH-10"
   }
 ];
 

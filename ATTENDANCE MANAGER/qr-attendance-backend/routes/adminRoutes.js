@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 const Attendance = require("../models/Attendance");
 
-// GET /api/admin/daily-qr — returns today's date string for QR generation
+
 router.get("/daily-qr", (req, res) => {
   const today = new Date().toISOString().split("T")[0];
   res.json({ qrData: today });
